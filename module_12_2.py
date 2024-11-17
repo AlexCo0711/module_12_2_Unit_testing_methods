@@ -1,6 +1,5 @@
 # Домашнее задание по теме "Методы Юнит-тестирования"
 # импорт библиотек и файлов
-
 import unittest
 import runner_and_tournament as rt
 
