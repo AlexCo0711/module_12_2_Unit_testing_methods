@@ -6,20 +6,21 @@ import runner_and_tournament as rt
 
 class TournamentTest(unittest.TestCase):
     all_results = None
+    
     # метод создания атрибута класса all_results
     # словарь в который будут сохраняться результаты всех тестов.
     @classmethod
     def setUpClass(cls):
         cls.all_results = {}
 
-    # метод создания 3 объектов
+    # метод создания 3 объектов для тестов
     def setUp(self):
         self.run1 = rt.Runner('Усэйн', 10)
         self.run2 = rt.Runner('Андрей', 9)
         self.run3 = rt.Runner('Ник', 3)
         self.run4 = rt.Runner('Алекс', 5)
 
-    # метод, где выводятся all_results по очереди в столбец
+    # метод, где выводятся all_results (зезультаты теста) по очереди в столбец
     @classmethod
     def tearDownClass(cls):
         # объявление словаря
