@@ -35,7 +35,7 @@ class TournamentTest(unittest.TestCase):
             # вывод на консоль участников теста по порядку
             print(result)
 
-    # метод 1-го теста между участником 1 и 3
+    # метод 1-го теста между участником 1 и 3 (название метода должно начинаться с test...)
     def testrun_1(self):
         # обращение к функции Tournament в файле runner_and_tournament
         run_1 = rt.Tournament(90, self.run1, self.run3)
@@ -46,14 +46,14 @@ class TournamentTest(unittest.TestCase):
         # присвоение self.all_results результатов теста между участниками
         self.all_results[f'Результат {self.run1} и {self.run3}'] = finish
 
-    # метод 2-го теста между участником 2 и 3
+    # метод 2-го теста между участником 2 и 3 (название метода должно начинаться с test...)
     def testrun_2(self):
         run_1 = rt.Tournament(90, self.run2, self.run3)
         finish = run_1.start()
         self.assertTrue(list(finish.values())[-1].name == str(self.run3))
         self.all_results[f'Результат {self.run2} и {self.run3}'] = finish
 
-    # метод 3-го теста между 3-мя участниками
+    # метод 3-го теста между 3-мя участниками (название метода должно начинаться с test...)
     def testrun_3(self):
         run_1 = rt.Tournament(90, self.run1, self.run2, self.run3)
         finish = run_1.start()
