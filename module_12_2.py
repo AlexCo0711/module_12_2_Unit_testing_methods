@@ -3,7 +3,7 @@
 import unittest
 import runner_and_tournament as rt
 
-№ класс TournamentTest, наследованный от TestCase
+# класс TournamentTest, наследованный от TestCase
 class TournamentTest(unittest.TestCase):
     all_results = None
     
